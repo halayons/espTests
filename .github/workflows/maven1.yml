@@ -2,6 +2,9 @@ on:
   push:
     branches:
       - '**'
+defaults:
+  run:
+    working-directory: "./spiral/"
 jobs:
   build:
     name: Maven Build
